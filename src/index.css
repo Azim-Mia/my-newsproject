@@ -1,6 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 #root{
-  text-align: center;
+  }
+*{
+  padding: 0 ;
+  margin:0px;
+  box-sizing: border-box;
+}
+body{
+background-image: repeating-conic-gradient(pink 2%, coral 6%);
+  border-radius: 50%;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: Verdana;
+  font-size: 1rem;
+  position:fixed;
+  margin-left: 8rem;
+  z-index: 100;
+}
+.container h1{
+  height: 50px;
+  font: bold;
+  width: 50px;
+  margin-top:3px;
+  margin-left:5rem;
+  animation-name:body_container;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+background-image: url('/src/public/azim.jpg');
+background-size: 50px;
+background-repeat: no-repeat;
+transition: 3s;
+padding: 2px;
+border-radius: 30px;
+}
+@keyframes body_container{
+  from{
+    font-size: 0.2rem;
+  color:yellow;
+  transform: rotate(360deg);
+border-radius:50px;
+color: #fff;
+  }
+  to{
+   font-size:1.2rem;
+   color: #fff;
+  }
+}
+.container h2{
+  margin-left:4rem;
+  font-size: 1.2rem;
+  background: blue;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 20px;
 }

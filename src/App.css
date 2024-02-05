@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.top_news_div{
+  border-radius: 20px;
+  position: sticky;
+  z-index: 100;
+  height: 60px;
+  width: 110px;
+  background:linear-gradient(red, blue);
+}
+.top_news{
+  margin-left:0px;
+  width: 110px;
+  padding: 10px 10px;
+  color: #fff;
+  animation-name: news;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 2s;
+}
+@keyframes news{
+  0%{
+   height: 0px; 
+   width: 0px;
+   font-size: 0px;
+   color: #fff;
+   border-radius: 20px;
+  }
+  25%{
+    height: 60px;
+    width: 110px;
+    font-size: 1.2rem;
+    color: #000;
+    background: yellow;
+    border-radius: 25px;
+  }
+  50%{
+    color:coral;
+    font-size: 1.2rem;
+    border-radius: 30px;
+  }
+  75%{
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 35px;
+  }
+  100%{
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: yellow;
+  }
+}
